@@ -1,0 +1,82 @@
+.projects{
+    height: 110vh;
+    width: 100vw;
+    background: #2B1EC2;
+   // background: green;
+    //justify-content: in;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5vh;
+}
+
+.projects-title{
+    //background-color: chocolate;
+    height: 90px;
+    width: 200px;
+    padding-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    
+}
+
+.projects-title-descr{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    //background: chartreuse;
+    width: 30vw;
+    margin-left: -60px;
+    margin-bottom: 34rem;
+    margin-top: 12px;
+
+}
+.grid {
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    grid-template-rows: 300px 200px;
+    grid-template-columns: 350px 350px 350px;
+    row-gap: 20px;
+    column-gap: 20px;
+    //background-color: saddlebrown;
+
+  }
+
+.card{
+    //background-color: royalblue;
+    grid-row: auto;
+    grid-column: auto;
+}
+// .card2{
+//     background-color: antiquewhite;
+//     grid-row: auto;
+//     grid-column: auto;
+// }
+// .card3{
+//     background-color: red;
+//     grid-row: auto;
+//     grid-column: auto;
+// }
+  
+// .cards{
+//     background-color: rgba(255, 255, 255, 0.8);
+//     text-align: center;
+//     padding: 20px 0;
+//     font-size: 30px;
+//   }
+
+.container{
+
+}
+
+.card-img{
+
+}
+
+.container::after{
+ 
+}

@@ -1,0 +1,134 @@
+.home-wrapper{
+    //background: radial-gradient(at center center, #2d7e9270 0%, #1c40617c 100%), url('https://gsrana-aws-bucket.s3.amazonaws.com/blue.jpg') ;
+    //background:  #141c3a   ;
+   // background-size: cover;
+    min-height: 600px;
+    //height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    span{
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6rem;
+        font-weight: 100;
+    }
+    h4{
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-top: 10px;
+
+    }
+
+    p{
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 0px;
+        width: 50%;
+        justify-content:space-evenly;
+        align-items: center;
+
+    }
+}
+
+.container{
+    top: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.container-span{
+    top: auto;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.container-heading{
+
+    width: 30%;
+    height: 9vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 0;
+}
+.container-para{
+    width: 90%;
+    margin-top: 10px;
+    //padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.home-layout__box{
+    border-radius: 8px;
+    padding: $l-size $m-size;
+    text-align: center;
+    width: 75rem;
+    color: #FFFFFF;
+}
+.home-wrapper-image{
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-wrapper__title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+    font-weight: 200;
+
+}
+
+.home-wrapper__para{
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    margin: 9px;
+}
+
+.home-wrapper__navbar{
+    margin: 0;
+    text-decoration: none;
+}
+
+.home-wrapper__navbar__container{
+    text-decoration: none;
+}
+
+.line-class{
+    display: block;
+    position: relative;
+    top: 70px;
+}
+
+.line{
+    display: inline-block;
+    vertical-align: middle;
+    height: 200;
+    width: 20;
+    //max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+}
