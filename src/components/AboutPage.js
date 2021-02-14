@@ -22,6 +22,7 @@ export const AboutPage = () => {
           </div>
           <div className="box-layout__top__image">
             <img
+              alt="mypic"
               style={{ width: 300, height: 430 }}
               src={process.env.PUBLIC_URL + "/mypic.jpeg"}
             />

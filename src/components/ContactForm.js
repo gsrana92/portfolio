@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Parallax } from "react-parallax";
 import * as emailjs from "emailjs-com";
-import '../styles/components/_contact.scss'
+import "../styles/components/_contact.scss";
 
 const image2 =
   "https://images.unsplash.com/photo-1612474341291-42f489fa11d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80";
@@ -9,14 +9,13 @@ const image2 =
 const firstNameRe = /[A-Z]{1}[a-z]{2,20}/g;
 const lastNameRe = /[A-Z]{1}[a-z]{2,20}/g;
 const emailRe = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
-const phoneRe = /[0-9]{10}/g
+const phoneRe = /[0-9]{10}/g;
 
 export default class ContactPage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      showForm: true,
       firstname: "",
       lastname: "",
       message: "",
@@ -25,16 +24,17 @@ export default class ContactPage extends Component {
       sent: false,
       error: "",
 
-      firstnameError:'',
-      lastnameError:'',
-      emailError:'',
-      phoneError:''
+      firstnameError: "",
+      lastnameError: "",
+      emailError: "",
+      phoneError: "",
 
       //errorText:""
     };
     this.handleOnChange = this.handleOnChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
     this.formValidation = this.formValidation.bind(this);
+    this.handleOnClick = this.handleOnClick.bind(this);
   }
 
   handleOnChange = (e) => {
@@ -43,55 +43,50 @@ export default class ContactPage extends Component {
     });
   };
 
-  formValidation = () =>{
+  formValidation = () => {
+    let firstnameError = "";
+    let lastnameError = "";
+    let emailError = "";
+    let phoneError = "";
 
-    let firstnameError=''
-    let lastnameError=''
-    let emailError=''
-    let phoneError=''
-
-    if(firstNameRe.test(this.state.firstname)){
-      firstnameError = 'Invalid First Name'
+    if (firstNameRe.test(this.state.firstname)) {
+      firstnameError = "Invalid First Name";
     }
-    if(lastNameRe.test(this.state.lastname)){
-      lastnameError = 'Invalid Last Name'
+    if (lastNameRe.test(this.state.lastname)) {
+      lastnameError = "Invalid Last Name";
     }
-    if(emailRe.test(this.state.email)){
-      emailError = 'Invalid Email'
+    if (emailRe.test(this.state.email)) {
+      emailError = "Invalid Email";
     }
-    if(phoneRe.test(this.state.phone)){
-      phoneError = 'Invalid Phone number'
+    if (phoneRe.test(this.state.phone)) {
+      phoneError = "Invalid Phone number";
     }
-    if(firstnameError || lastnameError || emailError || phoneError){
-      this.setState({firstnameError, lastnameError, emailError, phoneError})
-      return false
+    if (firstnameError || lastnameError || emailError || phoneError) {
+      this.setState({ firstnameError, lastnameError, emailError, phoneError });
+      return false;
     }
-    return true
-
-  }
-
+    return true;
+  };
 
   onFormSubmit = (e) => {
     e.preventDefault();
 
     const isvalid = this.formValidation();
 
-    if (isvalid){
-      console.log(this.state)
+    if (isvalid) {
+      console.log(this.state);
 
       this.setState({
-        firstname:'',
-        lastname: '',
-        email:'',
-        phone:'',
-        firstnameError:'',
-        lastnameError:'',
-        emailError:'',
-        phoneError:''
-      })
+        firstname: "",
+        lastname: "",
+        email: "",
+        phone: "",
+        firstnameError: "",
+        lastnameError: "",
+        emailError: "",
+        phoneError: "",
+      });
     }
-
-
 
     //   emailjs
     //   .sendForm(
@@ -134,10 +129,11 @@ export default class ContactPage extends Component {
                   placeholder="First Name"
                   name="firstname"
                   value={this.state.firstname}
-                  
-                /> 
-                <div style={{ fontSize: 10, color:'red'}}>{this.state.firstnameError}</div> 
-                
+                />
+                <div style={{ fontSize: 10, color: "red" }}>
+                  {this.state.firstnameError}
+                </div>
+
                 <label className="input-label">Last Name:</label>
                 <input
                   onChange={this.handleOnChange}
@@ -147,11 +143,12 @@ export default class ContactPage extends Component {
                   name="lastname"
                   value={this.state.lastname}
                 />
-                <div style={{ fontSize: 10, color:'red'}}>{this.state.lastnameError}</div>
-
+                <div style={{ fontSize: 10, color: "red" }}>
+                  {this.state.lastnameError}
+                </div>
               </div>
 
-              <div className='name2'>
+              <div className="name2">
                 <label className="input-label">Email</label>
                 <input
                   onChange={this.handleOnChange}
@@ -161,7 +158,9 @@ export default class ContactPage extends Component {
                   name="email"
                   value={this.state.email}
                 />
-                <div style={{ fontSize: 10, color:'red'}}>{this.state.emailError}</div>
+                <div style={{ fontSize: 10, color: "red" }}>
+                  {this.state.emailError}
+                </div>
 
                 <label className="input-label">Ph No.</label>
                 <input
@@ -172,8 +171,9 @@ export default class ContactPage extends Component {
                   name="phone"
                   value={this.state.phone}
                 />
-                <div style={{ fontSize: 10, color:'red'}}>{this.state.phoneError}</div>
-
+                <div style={{ fontSize: 10, color: "red" }}>
+                  {this.state.phoneError}
+                </div>
               </div>
 
               <div className="msg">
@@ -198,4 +198,3 @@ export default class ContactPage extends Component {
     );
   }
 }
-

@@ -14,7 +14,7 @@ export default function Card({ title, imageUrl, body }) {
         <div className="card-body">
           <p>{body}</p>
         </div>
-        <div className="btn">
+        <div className="card-btn">
           <button>
             <a href='https://github.com/gsrana92/portfolio'>Demo</a>
           </button>
