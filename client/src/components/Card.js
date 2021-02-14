@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/components/_card.scss'
 
 export default function Card({ title, imageUrl, body }) {
   return (

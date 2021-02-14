@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax } from 'react-parallax';
+import '../styles/components/_homepage.scss'
 
 const image1 = 'https://gsrana-aws-bucket.s3.amazonaws.com/blue.jpg'
 
