@@ -1,4 +1,4 @@
-import "./App.css";
+//import "./App.css";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import Navbar from "./components/Navbar";
@@ -10,7 +10,6 @@ import "./styles/styles.scss";
 function App() {
   return (
     <div>
-      <Navbar />
       <HomePage />
       <AboutPage />
       <Projects />

@@ -1,5 +1,5 @@
 import React from "react";
-//import mypic from '../../public/images/'
+import mypic from '../assets/mypic.png';
 import "../styles/components/_aboutpage.scss";
 
 export const AboutPage = () => {
@@ -25,7 +25,7 @@ export const AboutPage = () => {
             <img
               alt="mypic"
               style={{ width: 300, height: 430 }}
-              src={process.env.PUBLIC_URL + "/mypic.png"}
+              src={mypic}
             />
           </div>
           <div className="box-layout__top__skills">

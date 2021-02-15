@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    //margin-left: 20px;
     padding-left: 90px;
     padding-top: 90px;
     //padding-bottom: 10px;
@@ -23,6 +24,7 @@
 .box-layout__top{
     display: flex;
     flex-direction: row;
+    //padding-left: 20px;
 }
 .box-layout__top__education{
     display: flex;
@@ -160,6 +162,7 @@
     display: flex;
     flex: row;
     justify-content:center;
+    padding-right: 380px;
 }
 
 .box-layout__bottom__experience__social-icons__github{
@@ -173,7 +176,7 @@
 .box-layout__bottom__experience__social-icons__facebook{
     font-size: 35px;
     i{
-        color: orangered;
+        color: red;
     }
 
 }
@@ -181,7 +184,7 @@
     font-size: 35px;
     padding-right: 10px;
     i{
-        color: navy;
+        color: aqua;
     }
 
 }
@@ -199,6 +202,7 @@
         display:block;
         flex-direction: column;
         justify-content: center;
+
         //padding-left: 90px;
        // padding-top: 90px;
         //padding-bottom: 10px;
@@ -352,10 +356,11 @@
         display: flex;
         flex: row;
         justify-content:center;
+        padding-left: 280px;
     }
     
     .box-layout__bottom__experience__social-icons__github{
-        font-size: 35px;
+        font-size: 55px;
         padding-right: 10px;
         i{
             color: black;
@@ -363,17 +368,17 @@
     
     }
     .box-layout__bottom__experience__social-icons__facebook{
-        font-size: 35px;
+        font-size: 55px;
         i{
-            color: orangered;
+            color: red;
         }
     
     }
     .box-layout__bottom__experience__social-icons__linkedin{
-        font-size: 35px;
+        font-size: 55px;
         padding-right: 10px;
         i{
-            color: navy;
+            color: aqua;
         }
     
     }

@@ -17,8 +17,10 @@ export const HomePage = () => {
         </div>
         <div className="container-para">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I love creating beautiful websites, and solving complex problems. 
+            A cricket novels fan and in my spare time I like to read fantasy novels
+            and play video games.
+ 
           </p>
         </div>
 

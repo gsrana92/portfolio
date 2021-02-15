@@ -39,6 +39,7 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
+    text-align: justify;
 }
 .card-overlay > *{
     transform: translateY(20px);
@@ -47,15 +48,16 @@
 }
 .card-overlay:hover{
     opacity: 1;
-
 }
 .card-overlay:hover > *{
     transform: translateY(0);
+
 }
 h3, p{
     /* Resetting default value */
     margin: 0;
     padding: 0;
+
 }
 
 .card-title{
@@ -63,8 +65,8 @@ h3, p{
 }
 
 .card-btn{
-    background: navy;
-    color: navy;
+   // background: navy;
+   // color: navy;
     display: flex;
     justify-content: center;
 
@@ -73,7 +75,36 @@ h3, p{
 
 a{
     text-transform: uppercase;
-    color: #1B9CFC;
+    color: #ffff;
     text-decoration: none;
     font-weight: bold;
+}
+
+.card-body{
+    display: block;
+    text-align: justify;
+    width: 80%;
+}
+
+.image-container{
+    height: 100%;
+    width: 100%;
+
+}
+
+.image-container:hover{
+    transform: scale(1.2);
+
+
+}
+
+.demo-btn{
+    background: navy;
+    border: #ffffff;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    color: #ffff;
+    height: 50px;
+    width: 90px;
 }
