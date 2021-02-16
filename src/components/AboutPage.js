@@ -1,8 +1,16 @@
 import React from "react";
-import mypic from '../assets/mypic.png';
+import mypic from "../assets/mypic.png";
+//import { useSpring, animated } from "react-spring";
+import AWS from '../assets/AWS Certified Developer - Associate certificate.pdf';
+//import {useTransition, animated} from 'react-spring'
+//import { TweenMax, gsap } from "gsap";
 import "../styles/components/_aboutpage.scss";
 
 export const AboutPage = () => {
+
+
+
+
   return (
     <section className="wrapper" id="about">
       <div className="box-layout">
@@ -21,12 +29,9 @@ export const AboutPage = () => {
             </div>
             <p>Bachelor's of Technology in Computer Science & Engg.</p>
           </div>
+
           <div className="box-layout__top__image">
-            <img
-              alt="mypic"
-              style={{ width: 300, height: 430 }}
-              src={mypic}
-            />
+            <img alt="mypic" className='profile_pic' src={mypic} />
           </div>
           <div className="box-layout__top__skills">
             <h2>Skills</h2>
@@ -48,7 +53,7 @@ export const AboutPage = () => {
             </div>
             <div className="box-layout__top__skills__item">
               <i aria-hidden="true" class="far fa-dot-circle"></i>
-              <span>AWS Associate Developer (See Certificate)</span>
+              <span>AWS Associate Developer <a className='link' rel="noreferrer" href={AWS} target='_blank'>(See Certificate)</a></span>
             </div>
           </div>
         </div>
@@ -56,19 +61,19 @@ export const AboutPage = () => {
           <div className="box-layout__bottom__professional">
             <h2>Professional</h2>
             <div className="box-layout__bottom__professional__item">
-              <span>2019 - 2020 : Lotane & Associates</span>
+              <span>2019 - 2020 : Lotane & Associates (Cocoa, FL)</span>
               <i aria-hidden="true" class="far fa-dot-circle"></i>
             </div>
             <p>Worked as a SQL Specialist/ Data Analyst.</p>
 
             <div className="box-layout__bottom__professional__item">
-              <span>2018 - 2019 : AZTech Technologies</span>
+              <span>2018 - 2019 : AZTech Technologies (Texas, US)</span>
               <i aria-hidden="true" class="far fa-dot-circle"></i>
             </div>
             <p>Worked as a Data Analyst.</p>
 
             <div className="box-layout__bottom__professional__item">
-              <span>2014 - 2016 : Microstate Enterprises</span>
+              <span>2014 - 2016 : Microstate Enterprises (Chandigarh, India)</span>
               <i aria-hidden="true" class="far fa-dot-circle"></i>
             </div>
             <p>Worked as a SQL Developer.</p>
@@ -111,7 +116,6 @@ export const AboutPage = () => {
                   <i className="fab fa-facebook-square facebook"> </i>
                 </a>
               </div>
-
             </div>
           </div>
         </div>

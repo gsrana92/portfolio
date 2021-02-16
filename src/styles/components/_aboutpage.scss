@@ -1,10 +1,16 @@
 .wrapper{
-    //align-items: center;
+    align-items: center;
     background: #2B1EC2;
     display: block;
     //flex-direction: column;
-    //justify-content: center;
+    justify-content: center;
+    margin: 0;
+    z-index: -1;
  
+}
+.profile_pic{
+    width: 300px;
+    height: 400px;
 }
 .box-layout{
     align-items: center;
@@ -12,19 +18,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //margin-left: 20px;
-    padding-left: 90px;
-    padding-top: 90px;
+   // margin-left: 20px;
+    padding-left: -90px;
+    padding-top: 110px;
     //padding-bottom: 10px;
+    padding-right: 10px;
     position: block;
-    width: 90%;
+    width: 100%;
 
 }
 
 .box-layout__top{
     display: flex;
     flex-direction: row;
-    //padding-left: 20px;
+    //padding-left: -40px;
 }
 .box-layout__top__education{
     display: flex;
@@ -34,6 +41,7 @@
 
 
     h2{
+        //animation: 1s ease-in 1 slideInFromLeft;
         color: #ffff;
         //margin-left: -10px;
         text-align: end;
@@ -56,6 +64,10 @@
     i{
         color: #ffff;
     }
+}
+@keyframes slideInFromLeft{
+    0% {transform: translateX(-100%);}
+    100%{transform: translateX(0);}
 }
 
 .box-layout__top__skills{
@@ -189,12 +201,26 @@
 
 }
 
+.link{
+    font-size: 15px;
+    &:hover{
+        color: aqua;
+    }
+}
+
 
 
 @media screen and (max-width: 45rem){
     .wrapper{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        //width: 200px;
         width: 100%;
+        
+    }
+    .profile_pic{
+        width: 500px;
+        height: 700px;
     }
 
     .box-layout{
@@ -225,26 +251,33 @@
     .box-layout__top__education{
         display: flex;
         flex-direction: column;
-        margin-left: -10px;
+        
+        padding-left: 40px;
         text-align: justify;
         width: 130%;
 
     
         h2{
-            padding-right: 100px;
-            margin-top: -10px;
+            font-size: 30px;
+            left: 20px;
+            margin-top: -90px;
+            padding-right: 50px;
+            text-align: center;
         }
         span{
+            font-size: 20px;
             text-align: justify;
-            //padding-left: 20px;     
+            padding-left: 20px;     
         }
         p{
+            font-size: 15px;
             text-align: justify;
-            //padding-left: 20px;
+            padding-left: 20px;
 
     
         }
         i{
+            padding-left: 20px;
             padding-bottom: 10px;
         }
 
@@ -258,26 +291,31 @@
     .box-layout__top__image{
         display: block;
         margin-left: -50px;
-        padding-left: 30px;
+        padding-left: 110px;
         padding-top: 20px;
+        width: 500px;
     }
 
     .box-layout__top__skills{
         display: flex;
         flex-direction: column;
+        margin-left: 90px;
+        padding-left: 20px;
         text-align: justify;
         width: 100%;
 
     
         h2{
-            padding-left:40px;
+            font-size: 30px;
+            padding-left:150px;
             //padding-top: 10px;
 
         }
         span{
+            font-size: 20px;
             //margin-left: 10px;
             text-align: justify;
-            //padding-right: 20px;     
+            padding-left: 20px;     
         }
         p{
             text-align: justify;
@@ -287,7 +325,8 @@
         }
         i{
             margin-left: -70px;
-            //padding-right: 40px;
+            padding-left: 30px;
+            padding-top: 8px;
             //left: 0;
         }
 
@@ -302,7 +341,9 @@
         //background: red;
         display: flex;
         flex-direction: column;
-        margin-left: -80px;
+        //margin-left: 0px;
+
+        width: 100%;
  
    
         //width: 90%;
@@ -313,19 +354,22 @@
         display: flex;
         flex-direction: column;
         text-align: justify;
-        width: 130%;
+        width: 100%;
  
     
         //padding-top: 60px;
         h2{
-            padding-left: 70px;
+            font-size: 30px;
+            padding-left: 140px;
        
         }
         span{
+            font-size: 20px;
             text-align: justify;
        
         }
         p{
+            font-size: 15px;
             padding-bottom: 20px;
             text-align: justify;
         }
@@ -345,9 +389,14 @@
         margin-left: -20px;
         padding-bottom: 10px;
         text-align: justify;
-        width: 140%;
+        width: 100%;
+
+        h2{
+            font-size: 30px;
+        }
 
         p{
+            font-size: 15px;
             padding-bottom: 20px;
         }
 
@@ -356,7 +405,7 @@
         display: flex;
         flex: row;
         justify-content:center;
-        padding-left: 280px;
+        padding-left: 80px;
     }
     
     .box-layout__bottom__experience__social-icons__github{

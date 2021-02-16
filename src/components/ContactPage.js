@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Parallax } from "react-parallax";
+import * as emailjs from 'emailjs-com'
 import "../styles/components/_contact.scss";
 
 const image2 =
@@ -33,7 +34,7 @@ export default class ContactPage extends Component {
     };
     this.handleOnChange = this.handleOnChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
-    this.formValidation = this.formValidation.bind(this);
+   // this.formValidation = this.formValidation.bind(this);
     this.handleOnClick = this.handleOnClick.bind(this);
   }
 
@@ -49,75 +50,75 @@ export default class ContactPage extends Component {
     });
   };
 
-  formValidation = () => {
-    let firstnameError = "";
-    let lastnameError = "";
-    let emailError = "";
-    let phoneError = "";
+  // formValidation = () => {
+  //   let firstnameError = "";
+  //   let lastnameError = "";
+  //   let emailError = "";
+  //   let phoneError = "";
 
-    if (firstNameRe.test(this.state.firstname)) {
-      firstnameError = "Invalid First Name";
-    }
-    if (lastNameRe.test(this.state.lastname)) {
-      lastnameError = "Invalid Last Name";
-    }
-    if (emailRe.test(this.state.email)) {
-      emailError = "Invalid Email";
-    }
-    if (phoneRe.test(this.state.phone)) {
-      phoneError = "Invalid Phone number";
-    }
-    if (firstnameError || lastnameError || emailError || phoneError) {
-      this.setState({ firstnameError, lastnameError, emailError, phoneError });
-      return false;
-    }
-    return true;
-  };
+  //   if (firstNameRe.test(this.state.firstname)) {
+  //     firstnameError = "Invalid First Name";
+  //   }
+  //   if (lastNameRe.test(this.state.lastname)) {
+  //     lastnameError = "Invalid Last Name";
+  //   }
+  //   if (emailRe.test(this.state.email)) {
+  //     emailError = "Invalid Email";
+  //   }
+  //   if (phoneRe.test(this.state.phone)) {
+  //     phoneError = "Invalid Phone number";
+  //   }
+  //   if (firstnameError || lastnameError || emailError || phoneError) {
+  //     this.setState({ firstnameError, lastnameError, emailError, phoneError });
+  //     return false;
+  //   }
+  //   return true;
+  // };
 
   onFormSubmit = (e) => {
     e.preventDefault();
 
-    const isvalid = this.formValidation();
+    //const isvalid = this.formValidation();
 
-    if (isvalid) {
-      console.log(this.state);
+    // if (isvalid) {
+    //   console.log(this.state);
 
-      this.setState({
-        firstname: "",
-        lastname: "",
-        email: "",
-        phone: "",
-        firstnameError: "",
-        lastnameError: "",
-        emailError: "",
-        phoneError: "",
-      });
-    }
+    //   this.setState({
+    //     firstname: "",
+    //     lastname: "",
+    //     email: "",
+    //     phone: "",
+    //     firstnameError: "",
+    //     lastnameError: "",
+    //     emailError: "",
+    //     phoneError: "",
+    //   });
+    // }
 
-    //   emailjs
-    //   .sendForm(
-    //     "service_qmkim1s",
-    //     "template_l9fzavc",
-    //     e.target,
-    //     "user_TidLj0qzWYcbKwfKAED9y"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
-    // e.target.reset();
+       emailjs
+      .sendForm(
+        "service_qmkim1s",
+        "template_l9fzavc",
+        e.target,
+        "user_TidLj0qzWYcbKwfKAED9y"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
 
-    // this.setState({
-    //   firstname: "",
-    //   lastname: "",
-    //   message: "",
-    //   email:"",
-    //   phone:""
-    // });
+    this.setState({
+      firstname: "",
+      lastname: "",
+      message: "",
+      email:"",
+      phone:""
+    });
   };
 
   render() {

@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "./Card";
 import "../styles/components/_projects.scss";
+import "../styles/components/_card.scss";
+
 
 export const Projects = () => {
   return (

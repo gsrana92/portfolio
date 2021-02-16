@@ -99,6 +99,7 @@ a{
 
 }
 .images{
+    
     &:hover{
         transform: scale(1.2);
     }
@@ -119,4 +120,25 @@ a{
     color: #ffff;
     height: 50px;
     width: 90px;
+}
+
+@media screen and (max-width: 540px){
+    .image-container img{
+        // overflow: hidden;
+         height: 300px;
+         width: 520px;
+      
+
+     
+     }
+     .images{
+         width: 500px;
+     }
+     .card-container{
+         width: 520px;
+     }
+     .card-body{
+        text-align: center;
+    }
+
 }

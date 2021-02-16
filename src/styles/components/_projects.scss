@@ -7,7 +7,7 @@
     //min-height: 120vh;
 
     //margin-top: -5vh;
-    //width: 100vw;
+    width: 100%;
 
 }
 
@@ -22,8 +22,9 @@
     margin-top: 30px;
     padding-left: 10px;
     //padding-bottom: 40px;
-    width: 200px;
+    width: 100%;
     h2{
+        padding-left: 600px;
         margin-bottom: -5px;
     }
  
@@ -39,8 +40,8 @@
     margin-left: -60px;
     margin-bottom: 34rem;
     margin-top: 12px;
-    padding-left: 30px;
-    width: 30vw;
+    padding-left: 630px;
+    //width: 100%;
 
 }
 .grid {
@@ -59,12 +60,13 @@
 
   }
 
-.card{
-    //background-color: royalblue;
-    grid-row: auto;
-    grid-column: auto;
-    //border-radius: 78px;
-}
+// .card{
+//     //background-color: royalblue;
+//     grid-row: auto;
+//     grid-column: auto;
+//     //border-radius: 78px;
+    
+// }
 
 
 @media screen and (max-width: 45rem){
@@ -91,8 +93,8 @@
         //  padding-bottom: 40px;
         //  width: 200px;
            h2{
-               margin-bottom: -10px;
-               padding-left: -10px;
+               //margin-bottom: -10px;
+               padding-left: 160px;
            }
       
      
@@ -107,8 +109,8 @@
          //margin-left: -60px;
         // margin-bottom: 34rem;
          //margin-top: 12px;
-         //padding-left: 30px;
-         width: 140%;
+         padding-left: 190px;
+         width: 100%;
      
      }
      .grid {
@@ -116,24 +118,25 @@
          //column-gap: 20px;
          display: flex;
          flex-direction: column;
-         //grid-template-rows: 300px 200px;
-         //grid-template-columns: 350px 350px 350px;
-         //justify-content: center;
+         grid-template-rows: 500px;
+         grid-template-columns: 500px ;
+         justify-content: center;
         // margin-bottom: 20px;
         // padding-top: 70px;
          padding-left: 6px;
          //padding-bottom: 80px;
-         //row-gap: 20px;
+         row-gap: 20px;
          width: 100%;
      
      
        }
      
-     .card{
-         //background-color: royalblue;
-         grid-row: auto;
-         grid-column: auto;
-     }
+    //  .card{
+    //      //background-color: royalblue;
+    //      //grid-row: auto;
+    //     // grid-column: auto;
+    //      width: 100%;
+    //  }
 
 
 }
