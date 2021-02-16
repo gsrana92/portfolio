@@ -53,7 +53,7 @@ export const AboutPage = () => {
               <i aria-hidden="true" class="far fa-dot-circle"></i>
               <span>
                 AWS Associate Developer{" "}
-                <a className="link" rel="noreferrer" href={AWS} target="_blank">
+                <a className="link" rel="noopener noreferrer" href='https://gsrana-aws-bucket.s3.amazonaws.com/AWS+Certified+Developer+-+Associate+certificate.pdf' target="_blank">
                   (See Certificate)
                 </a>
               </span>
@@ -95,7 +95,7 @@ export const AboutPage = () => {
             </p>
             <div className="resume">
               <img height="20" width="20" src={download} alt="download-icon" className='download-icon'/>
-              <a className="link-resume" href={resume} target='_blank' rel='noopener noreferrer'>Download my resume</a>
+              <a className="link-resume" href='https://gsrana-aws-bucket.s3.amazonaws.com/Resume_DA.pdf' target='_blank' rel='noopener noreferrer'>Download my resume</a>
             </div>
             <div className="box-layout__bottom__experience__social-icons">
               <div className="box-layout__bottom__experience__social-icons__github">
