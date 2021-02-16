@@ -133,9 +133,17 @@ a{
      }
      .images{
          width: 500px;
+         z-index: 1;
+         &:hover{
+             transform: scale(1.2);
+         }
+
      }
      .card-container{
          width: 520px;
+         &:hover{
+             transform: scale(1.2);
+         }
      }
      .card-body{
         text-align: center;

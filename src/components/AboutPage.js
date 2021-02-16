@@ -1,16 +1,14 @@
 import React from "react";
 import mypic from "../assets/mypic.png";
 //import { useSpring, animated } from "react-spring";
-import AWS from '../assets/AWS Certified Developer - Associate certificate.pdf';
+import AWS from "../assets/AWS Certified Developer - Associate certificate.pdf";
+import resume from "../assets/Resume_DA.pdf";
+import download from "../assets/download.png";
 //import {useTransition, animated} from 'react-spring'
 //import { TweenMax, gsap } from "gsap";
 import "../styles/components/_aboutpage.scss";
 
 export const AboutPage = () => {
-
-
-
-
   return (
     <section className="wrapper" id="about">
       <div className="box-layout">
@@ -31,7 +29,7 @@ export const AboutPage = () => {
           </div>
 
           <div className="box-layout__top__image">
-            <img alt="mypic" className='profile_pic' src={mypic} />
+            <img alt="mypic" className="profile_pic" src={mypic} />
           </div>
           <div className="box-layout__top__skills">
             <h2>Skills</h2>
@@ -53,7 +51,12 @@ export const AboutPage = () => {
             </div>
             <div className="box-layout__top__skills__item">
               <i aria-hidden="true" class="far fa-dot-circle"></i>
-              <span>AWS Associate Developer <a className='link' rel="noreferrer" href={AWS} target='_blank'>(See Certificate)</a></span>
+              <span>
+                AWS Associate Developer{" "}
+                <a className="link" rel="noreferrer" href={AWS} target="_blank">
+                  (See Certificate)
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -73,7 +76,9 @@ export const AboutPage = () => {
             <p>Worked as a Data Analyst.</p>
 
             <div className="box-layout__bottom__professional__item">
-              <span>2014 - 2016 : Microstate Enterprises (Chandigarh, India)</span>
+              <span>
+                2014 - 2016 : Microstate Enterprises (Chandigarh, India)
+              </span>
               <i aria-hidden="true" class="far fa-dot-circle"></i>
             </div>
             <p>Worked as a SQL Developer.</p>
@@ -88,6 +93,10 @@ export const AboutPage = () => {
               open to contributing designs to a design firm's project
               repository.
             </p>
+            <div className="resume">
+              <img height="20" width="20" src={download} alt="download-icon" className='download-icon'/>
+              <a className="link-resume" href={resume} target='_blank' rel='noopener noreferrer'>Download my resume</a>
+            </div>
             <div className="box-layout__bottom__experience__social-icons">
               <div className="box-layout__bottom__experience__social-icons__github">
                 <a
