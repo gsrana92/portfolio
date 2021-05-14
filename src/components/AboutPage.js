@@ -1,5 +1,5 @@
 import React from "react";
-import mypic from "../assets/mypic.png";
+import mypic2 from "../assets/mypic2.jpeg";
 //import { useSpring, animated } from "react-spring";
 import AWS from "../assets/AWS Certified Developer - Associate certificate.pdf";
 import resume from "../assets/Resume_DA.pdf";
@@ -29,7 +29,7 @@ export const AboutPage = () => {
           </div>
 
           <div className="box-layout__top__image">
-            <img alt="mypic" className="profile_pic" src={mypic} />
+            <img alt="mypic2" className="profile_pic" src={mypic2} />
           </div>
           <div className="box-layout__top__skills">
             <h2>Skills</h2>

@@ -16,41 +16,43 @@
     //width: 100%;
 
 }
-.image-container img:hover{
-    background-size: 140%;
-    transition: all .4s;
 
-
-
-}
 
 .card-overlay{
     //margin: 1rem;
    // margin-top: 0.3rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    //background: grey;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-    text-align: justify;
+   opacity: 0;
+    
 }
 .card-overlay > *{
     transform: translateY(20px);
     transition: transform 0.25s;
 
 }
-.card-overlay:hover{
-    opacity: 1;
+.card-container:hover{
+    .image-container .image:hover{
+        background-size: 140%;
+        transition: all .4s;
+    }
+    .card-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        //background: grey;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.25s;
+        text-align: justify;
+        opacity: 1;
+    }
+    
 }
 .card-overlay:hover > *{
     transform: translateY(0);
@@ -93,24 +95,9 @@ a{
     height: 100%;
     width: 100%;
 
-    &:hover{
-        transform: scale(1.2);
-    }
+
 
 }
-.images{
-    
-    &:hover{
-        transform: scale(1.2);
-    }
-}
-
-.image-container{
-    &:hover{
-        transform: scale(1.2);
-    }
-}
-
 .demo-btn{
     background: navy;
     border: #ffffff;
@@ -134,16 +121,12 @@ a{
      .images{
          width: 500px;
          z-index: 1;
-         &:hover{
-             transform: scale(1.2);
-         }
+         
 
      }
      .card-container{
          width: 520px;
-         &:hover{
-             transform: scale(1.2);
-         }
+         
      }
      .card-body{
         text-align: center;
