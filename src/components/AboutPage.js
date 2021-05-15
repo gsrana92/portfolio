@@ -1,5 +1,5 @@
 import React from "react";
-import mypic2 from "../assets/mypic2.jpeg";
+//import mypic from "../assets/mypic.jpeg";
 //import { useSpring, animated } from "react-spring";
 import AWS from "../assets/AWS Certified Developer - Associate certificate.pdf";
 import resume from "../assets/Resume_DA.pdf";
@@ -7,6 +7,8 @@ import download from "../assets/download.png";
 //import {useTransition, animated} from 'react-spring'
 //import { TweenMax, gsap } from "gsap";
 import "../styles/components/_aboutpage.scss";
+
+const image = "https://my-web-bucket-v1.s3.us-east-2.amazonaws.com/mypic.jpeg";
 
 export const AboutPage = () => {
   return (
@@ -29,7 +31,7 @@ export const AboutPage = () => {
           </div>
 
           <div className="box-layout__top__image">
-            <img alt="mypic2" className="profile_pic" src={mypic2} />
+            <img alt="mypic2" className="profile_pic" src={image} />
           </div>
           <div className="box-layout__top__skills">
             <h2>Skills</h2>

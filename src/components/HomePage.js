@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Parallax } from "react-parallax";
 import { Spring } from 'react-spring';
+import myImage from '../assets/mypic.jpeg';
 import "../styles/components/_homepage.scss";
 
 const image1 = "https://gsrana-aws-bucket.s3.amazonaws.com/blue.jpg";
