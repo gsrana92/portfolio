@@ -8,7 +8,7 @@ import download from "../assets/download.png";
 //import { TweenMax, gsap } from "gsap";
 import "../styles/components/_aboutpage.scss";
 
-const image = "https://my-web-bucket-v1.s3.us-east-2.amazonaws.com/mypic.jpeg";
+const image = "https://my-web-bucket-v1.s3.us-east-2.amazonaws.com/mypic2.jpg";
 
 export const AboutPage = () => {
   return (
@@ -97,7 +97,7 @@ export const AboutPage = () => {
             </p>
             <div className="resume">
               <img height="20" width="20" src={download} alt="download-icon" className='download-icon'/>
-              <a className="link-resume" href='https://gsrana-aws-bucket.s3.amazonaws.com/Resume_DA.pdf' target='_blank' rel='noopener noreferrer'>Download my resume</a>
+              <a className="link-resume" href='https://my-web-bucket-v1.s3.us-east-2.amazonaws.com/Resume_PDF.pdf' target='_blank' rel='noopener noreferrer'>Download my resume</a>
             </div>
             <div className="box-layout__bottom__experience__social-icons">
               <div className="box-layout__bottom__experience__social-icons__github">
